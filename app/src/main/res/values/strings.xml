@@ -3,4 +3,8 @@
     <string name="title">Smart Converter</string>
     <string name="btn">Convert</string>
     <string name="hint">Enter miles</string>
+    <string name="title_activity_login_page">LoginPageActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

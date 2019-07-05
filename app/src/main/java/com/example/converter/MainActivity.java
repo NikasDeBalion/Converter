@@ -3,6 +3,7 @@ package com.example.converter;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.content.DialogInterface;
@@ -15,12 +16,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText text_from_user;
     private TextView result;
     private Button btn;
     private float num;
+    private FloatingActionButton floatBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +37,15 @@ public class MainActivity extends AppCompatActivity {
         this.text_from_user = findViewById(R.id.editText);
         this.result = findViewById(R.id.result_field);
         this.btn = findViewById(R.id.btn_convert);
+        this.floatBtn = findViewById(R.id.floatBtn);
+
+        floatBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent("com.example.converter.LoginPageActivity");
+                startActivity(intent);
+            }
+        });
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
