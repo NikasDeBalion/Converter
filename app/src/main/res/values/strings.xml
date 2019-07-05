@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="title">Smart Converter</string>
+    <string name="btn">Convert</string>
+    <string name="hint">Enter miles</string>
+</resources>
